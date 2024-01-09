@@ -1,0 +1,80 @@
+{
+    "totalRecords": 1,
+    "limit": 1000,
+    "offset": 0,
+    "opportunitiesData": [
+        {
+            "noticeId": "b3cf1793862c42b8929616760bac4610",
+            "title": "DA01--VA Secure, Performant, Reliable, and User-Centered  Experiences (SPRUCE) - IDIQ (VA-23-00053369)    Amendment 0002",
+            "solicitationNumber": "36C10B24R0005",
+            "fullParentPathName": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+            "fullParentPathCode": "036.3600.36C10B",
+            "postedDate": "2023-12-14",
+            "type": "Combined Synopsis/Solicitation",
+            "baseType": "Combined Synopsis/Solicitation",
+            "archiveType": "autocustom",
+            "archiveDate": "2024-03-29",
+            "typeOfSetAsideDescription": "Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)",
+            "typeOfSetAside": "SDVOSBC",
+            "responseDeadLine": "2023-12-21T10:00:00-05:00",
+            "naicsCode": "541519",
+            "naicsCodes": ["541519"],
+            "classificationCode": "DA01",
+            "active": "Yes",
+            "award": {"awardee": {}},
+            "pointOfContact": [
+                {
+                    "fax": "",
+                    "type": "primary",
+                    "email": "Michael.Frank@va.gov",
+                    "phone": "Troy.Loveland@va.gov",
+                    "title": "Contract Specialist",
+                    "fullName": "Michael.frank@va.gov"
+                }
+            ],
+            "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b3cf1793862c42b8929616760bac4610",
+            "organizationType": "OFFICE",
+            "officeAddress": {
+                "zipcode": "07724",
+                "city": "EATONTOWN",
+                "countryCode": "USA",
+                "state": "NJ"
+            },
+            "placeOfPerformance": {
+                "streetAddress": "",
+                "streetAddress2": "",
+                "city": {"name": ""},
+                "state": {"name": ""},
+                "zip": "",
+                "country": {"name": ""}
+            },
+            "additionalInfoLink": null,
+            "uiLink": "https://sam.gov/opp/b3cf1793862c42b8929616760bac4610/view",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=b3cf1793862c42b8929616760bac4610&limit=1"
+                }
+            ],
+            "resourceLinks": [
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c4dd885100746b29ec36c9228e700e4/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51d8f26278e24e1e8aee674679ef70e8/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f827d7655784c1a8f86c29552d12abd/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fb7d8c2b50a4a4197fac6fda0d72d39/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8760a3c559a340a5806c30d7ee1ff073/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b04d43885e324a7b8b786544651ec8ac/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb695a89344b453f95e7c1bf6d3a3036/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e910379d9b7647f4b160b41d5a667616/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef703d93b1fc419bbef5d0a084d2324c/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1527f57139349099ea3f03999ac25e7/download?api_key=null&token=",
+                "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f93b2945230c437cb094474543d5c9de/download?api_key=null&token="
+            ]
+        }
+    ],
+    "links": [
+        {
+            "rel": "self",
+            "href": "null/opportunities/v2/search?title=SPRUCE&postedFrom=12%2F14%2F2023&postedTo=12%2F14%2F2023&limit=1000&offset=0"
+        }
+    ]
+}

@@ -46,7 +46,10 @@ print(res)
 Out of the box, there is a simple CLI, called `fargo`. You can use it to do things like:
 
 ```sh
-fargo sam [UEI]
+fargo sam entity [UEI]
+# Dumps a json of an entity's information
+
+fargo sam opportunities --title "machine"
 # Dumps a json of an entity's information
 
 fargo usaspending [UEI] --awards

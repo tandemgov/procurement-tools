@@ -1,6 +1,6 @@
 import json
 from procurement_tools.models.entity import Entity
-from procurement_tools.sam import get_entity
+from procurement_tools.sam import get_entity, get_opportunities
 from pydantic import ValidationError
 import pytest
 import requests
@@ -105,3 +105,10 @@ def test_get_entity_integrity(monkeypatch):
         res.integrity_information.responsibility_information_list[0].attachment
         == "https://iae-prd-fapiis-attachments.s3.amazonaws.com/68479.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231203T134518Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=AKIAY3LPYEEXT7JTNBPZ%2F20231203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cab0834a1afc129cb9bf632c74f166ba56203debb6c8fc4971096481e1137421"
     )
+
+
+def test_get_opportunities(sam_opportunties):
+    res = get_opportunities(
+        dict(title="SPRUCE", postedFrom="12/14/2023", postedTo="12/14/2023", limit=1000)
+    )
+    assert res["opportunitiesData"][0]["noticeId"] == "b3cf1793862c42b8929616760bac4610"

@@ -1,7 +1,11 @@
 import httpx
 import json
+import os
 import pytest
 import requests
+
+
+os.environ["SAM_API_KEY"] = "NotARealKey"
 
 
 class MockSAMEntityResponse:
@@ -92,3 +96,15 @@ def sbir_awards_api_results(respx_mock):
     #     return MockSBIRAwardsResponse
 
     # monkeypatch.setattr(httpx, "get", mock_get)
+
+
+@pytest.fixture
+@pytest.mark.respx(base_url="https://api.sam.gov")
+def sam_opportunties(respx_mock):
+    with open("./tests/data/sam_opps.json", "r") as fp:
+        data = json.load(fp)
+    respx_mock.get(
+        "https://api.sam.gov/opportunities/v2/search?api_key=NotARealKey&title=SPRUCE&postedFrom=12%2F14%2F2023&postedTo=12%2F14%2F2023&limit=1000&offset=0"
+    ).mock(
+        return_value=httpx.Response(200, json=data),
+    )

@@ -5,9 +5,30 @@ runner = CliRunner()
 
 
 def test_sam(sam_api_results):
-    result = runner.invoke(app, ["sam", "XRVFU3YRA2U5"])
+    result = runner.invoke(app, ["sam", "entity", "XRVFU3YRA2U5"])
     assert result.exit_code == 0
     assert "JAMES & ENYART" in result.stdout
+
+
+def test_sam_opportunities(sam_opportunties):
+    result = runner.invoke(
+        app,
+        [
+            "sam",
+            "opportunities",
+            "--title",
+            "SPRUCE",
+            "--postedfrom",
+            "12/14/2023",
+            "--postedto",
+            "12/14/2023",
+        ],
+    )
+    assert result.exit_code == 0
+    assert (
+        "DA01--VA Secure, Performant, Reliable, and User-Centered  Experiences (SPRUCE)"
+        in result.stdout
+    )
 
 
 def test_usaspending_recipient_profile(usas_recipient_api_results):
